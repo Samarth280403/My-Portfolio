@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* section{
+    background: url('bg.jpg');
+    /* background: fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+} */
+
+.ripple{
+    width: 100%;
+    height: 100vh;
+    background:url(bg.jpg);
+    background-size: cover;
+}
+
+.header{
+    justify-content: left;
+    float: left;
+    color: white;
+    padding: 20px;
+}
+
+.header ul{
+    display: flex;
+    flex-direction: row;
+    margin: 22px;
+}
+
+.header span{
+    color: cyan;
+}
+
+.heading{
+    /* margin: 2px; */
+    padding-bottom: 20px;
+    padding: 7% 0% 0% 7%;
+}
+
+.heading h1{
+    color: cyan;
+    width: 100%;
+    font-weight: 600;
+    font-size: 2.5rem;
+    /* padding:20% 0% 0% 15%; */
+}
+
+.heading p{
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    /* padding-left:15% ; */
+}
+
+.heading button{
+    background-color: cyan;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* margin-left: 15%; */
+    font-size: 17px;
+}
+
+.heading button:hover{
+    background-color: transparent;
+    color: white;
+    border:1.5px solid cyan;
+    width: auto;
+    cursor:pointer;
+}
+
+.heading span{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* .container .drop{
+    position: relative;
+    width: 450px;
+    height: 400px;
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+    25px 35px 20px rgba(0,0,0,0.05),
+    25px 30px 30px rgba(0,0,0,0.05),
+    inset -20px -20px 25px rgba(255,255,255,0.9);
+    border-radius: 42% 58% 66% 34% / 31% 50% 50% 69% ;
+} */

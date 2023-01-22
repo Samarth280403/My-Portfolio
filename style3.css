@@ -1,0 +1,260 @@
+html, body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-image: url('background.png');
+    background-size: cover;  
+    position: fixed;
+    list-style: none;
+    /* background-image: linear-gradient(#000e2e,#036b79); */
+    /* background: #f953c6;
+    background: -webkit-linear-gradient(to right,#b91d73,#f953c6);
+    background: linear-gradient(to right,#b91d73,#f953c6); */
+}
+
+h1{
+    color: #0059e9;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span{
+    color: #ffffff;
+}
+
+h1:hover{
+    letter-spacing: 2px;
+}
+
+h3{
+    width: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3:hover{
+    letter-spacing: 2px;
+}
+
+/* span{
+    color: rgb(0, 238, 255);
+} */
+
+.skill{
+    width: 600px;
+    margin: 10px auto;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25),0 10px 20px rgba(0,0,0,0.22);
+}
+
+.skill li{
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.bar{
+    background: #353b4863;
+    display: block;
+    height: 20px;
+    /* border: 1px solid rgba(0,0,0,0.3); */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.12),0 1px 2px rgba(0, 0, 0, 0.062);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,.1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.12),0 10px 10px rgba(0,0,0,0.22);
+}
+
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(136deg, rgb(0, 255, 255)0%,rgb(43, 91, 248)100%);
+}
+
+.html{
+    width: 85%;
+    animation: html 3s;
+}
+
+.css{
+    width: 65%;
+    animation: css 3s;
+}
+
+.javascript{
+    width: 47%;
+    animation: javascript 3s;
+}
+
+.java{
+    width: 70%;
+    animation: java 3s;
+}
+
+a{
+    text-decoration: none;
+    color:#2264ce ;
+    
+    }
+    .back{
+        margin-top:10px ;
+    }
+.back a{
+        color: white;
+    
+    }
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:85%
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:65%
+    }
+}
+
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:47%
+    }
+}
+
+@keyframes java {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:70%
+    }
+}
+
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite ;
+}
+
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -100px;
+}
+
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.4;
+    }
+    70%{
+        opacity: 0.4;
+    }
+    100%{
+        transform: translateY(-95vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 45px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+    width: 50px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 59px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+    width: 55px;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3.3s;
+    width: 40px;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 60px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 4s;
+    width: 42px;
+}
+.bubbles img:nth-child(8){
+    animation-delay: 1.6s;
+    width: 53px;
+}
+.bubbles img:nth-child(9){
+    animation-delay: 2s;
+    width: 45px;
+}
+
+
+@media screen and (max-width:600px)
+{
+    /* body{
+        background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+        position: relative;
+    } */
+    h1{
+        color: #fff;
+    }
+
+    .skill
+    {
+        width: 290px;
+    }
+
+    .back
+    {
+        margin-top: 25px;
+    }
+    
+    
+
+    @keyframes bubble {
+        0%{
+            transform: translateY(0);
+            opacity: 0;
+        }
+        40%{
+            opacity: 0.2;
+        }
+        50%{
+            opacity: 0.3;
+        }
+        75%{
+            opacity: 0.2;
+        }
+        100%{
+            transform: translateY(-95vh);
+            opacity: 0;
+        }
+    }
+    
+}
